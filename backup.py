@@ -1,3 +1,4 @@
+# Run script as sudo
 import os, sys, time
 
 start_time = time.time()
@@ -30,5 +31,5 @@ for app in applications:
 print "Wrote all installed applications to %s..." % backup_list_path
 
 end_time = time.time()
-print "Done backing up files! Script took %s minutes" % (end_time - start_time)
+print "Done backing up files! Script took %s minutes" % ((end_time - start_time)/60.)
 
